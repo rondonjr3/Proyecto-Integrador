@@ -1,0 +1,57 @@
+<!--
+<div class = "row">
+    <div class="col-xl-1 col-lg-1 col-md-1 col-sm-12 col-12 text-center"></div>
+    <div class="card mb-3 col-xl-10 col-lg-10 col-md-10 col-sm-12 col-12 text-center">
+        <img src="..." class="card-img-top" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Card title</h5>
+          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+          <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+</div>
+-->
+
+<div class="section" id="acerca">
+    <div class="container ">
+        <div class="card" data-aos="fade-in" *ngFor = "let Acerca of acerca">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <div class="card-body">
+                        <div class="h4 mt-0 title">Acerca de</div>
+                            <p align="justify">{{Acerca.acerca}}</p>
+                    </div>
+                </div>    
+                <div class="col-lg-6 col-md-12">  
+   
+                    <div class="card-body">
+                        <div class="h4 mt-0 title">Informacion basica</div>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <strong class="text-uppercase">Nacimiento:</strong>
+                            </div>
+                            <div class="col-sm-8">{{Acerca.nacimiento}}</div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-sm-4">
+                                <strong class="text-uppercase">Email:</strong>
+                            </div>
+                            <div class="col-sm-8">{{Acerca.email}}</div>
+                        </div>
+                        <div class="row mt-4">
+                            <div class="col-sm-4">
+                                <strong class="text-uppercase">Languaje:</strong>
+                            </div>
+                            <div class="col-sm-8">{{Acerca.lenguaje}}</div>
+                        </div>
+                        <div class="col-lg-1" *ngIf = "isLogged"> 
+                            <button class = "btn btn-warning" routerLink = "/editace//{{Acerca.id}}" style="margin-left: 550px;"><i class="bi bi-pencil-fill"></i></button>        
+                        </div>  
+                     </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,50 @@
+<section class="vh-100">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col col-xl-10">
+          <div class="card" style="border-radius: 1rem;">
+            <div class="row g-0">
+              <div class="col-md-12 col-lg-12 d-flex align-items-center">
+                <div class="card-body p-4 p-lg-5 text-black">
+  
+                    <div class = "container" *ngIf = "acerca">
+        
+                            <div>
+                                <form (ngSubmit) = "onUpdate()" novalidate #f = "ngForm">
+                                    <div class="form-group">
+                                        <label for="acerca">Actualizar acerca</label>
+                                        <input type="text" class="form-control" id="acerca" name = "acerca" [(ngModel)] = "acerca.acerca" required maxlength="1000">
+                                    </div>
+                                    <p></p>
+                                    <div class="form-group">
+                                        <label for="nacimiento">Actualizar nacimiento</label>
+                                        <input type="text" class="form-control" id="nacimiento" name = "nacimiento" [(ngModel)] = "acerca.nacimiento" required maxlength="75">
+                                    </div>
+                                    <p></p>
+                                    <div class="form-group">
+                                        <label for="email">Actualizar email</label>
+                                        <input type="text" class="form-control" id="email" name = "email" [(ngModel)] = "acerca.email" required maxlength="75">
+                                    </div>
+                                    <p></p>
+                                    <div class="form-group">
+                                        <label for="lenguaje">Actualizar lenguaje</label>
+                                        <input type="text" class="form-control" id="lenguaje" name = "lenguaje" [(ngModel)] = "acerca.lenguaje" required maxlength="75">
+                                    </div>
+                                    <p></p>
+                                    <button class = "btn btn-primary">Actualizar acerca</button>
+                                    <button type ="button" class="btn btn-primary" routerLink = "/" style="margin-left: 10px;">Voler</button>
+                                </form>
+                            
+    
+                        </div>
+                    </div>
+  
+  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>

@@ -1,0 +1,24 @@
+/* Professional Skills Style */
+.progress-container {
+  margin-bottom: 50px;
+  font-size: 18px;
+}
+
+.fondo{
+    background-color: #cff0bd;
+  
+}
+
+.card{
+  box-shadow: 3px 3px 3px grey;
+}
+
+.card-body{
+  margin-top: 20px;
+}
+
+.botonSeparado{
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}

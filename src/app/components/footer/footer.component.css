@@ -1,0 +1,35 @@
+.fondo{
+    background-color: #585a5d;
+    padding: 20px;
+}
+
+
+.efecto_mouse {
+    display: inline-block;
+    position: relative;
+    color: blue;
+    text-decoration: none;
+    }
+.efecto_mouse:after {
+    content: "";
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    transition: all .8s;
+    }
+.efecto_mouse:hover:after {
+    width: 100%;
+    background: rgb(19, 19, 201);
+    }
+
+.redesSociales{
+    
+    margin-top: 25%;
+    padding: 5px;
+}
+.text-center{
+    color:white;
+   
+
+}

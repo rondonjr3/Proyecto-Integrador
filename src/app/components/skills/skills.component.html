@@ -1,0 +1,33 @@
+<div class = "fondo">
+<div class="section" id="skill">
+  <div class="container">
+    <div class="h4 text-center mb-4 title">Hard and Soft Skills</div>
+    <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom">
+      <div class="card-body">
+        <div class="row"  >
+          <div class="col-md-6" *ngFor = "let Habilidad of habilidad">
+            <div class="progress-container progress-primary">
+              <span class="progress-badge">{{Habilidad.nombreH}}
+                <button class = "btn btn-warning botonSeparado" routerLink = "/edithab//{{Habilidad.id}}" *ngIf = "isLogged"><i class="bi bi-pencil-fill"></i></button> 
+                <span></span>
+                <button class="btn btn-danger botonSeparado" (click) = "delete(Habilidad.id)" *ngIf = "isLogged"><i class="bi bi-x-lg" ></i></button>
+              </span>
+              <div class="progress">
+                <div class="progress-bar progress-bar-striped progress-bar-animated" data-aos="progress-full" data-aos-offset="10"
+                  data-aos-duration="2000" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+                  [style.width]="Habilidad.porcentajeH + '%'"></div>
+                <span class="progress-value">{{Habilidad.porcentajeH}}%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class = "row">
+      <p></p>
+      <button type ="button" class="btn btn-secondary col-lg-1" routerLink = "/nuevahab" *ngIf = "isLogged" style="width: 100px; height: 50px; margin-left: 11px; margin-bottom: 20px;"><h3><i class="bi bi-plus-circle"></i></h3></button>
+
+    </div>
+  </div>
+</div>
+</div>
